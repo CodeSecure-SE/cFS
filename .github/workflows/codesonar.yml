@@ -20,10 +20,10 @@ jobs:
       TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       ROOT_TREE: "OSS-Projects/NASA-cFS-GitHub" 
       PROJECT_NAME: "cFS"
-      CSONAR_HUB_URL: "https://partnerdemo.codesonar.com" 
       CSONAR_HUB_USER: "${{ secrets.CSONAR_HUB_USER }}"
       CSONAR_HUB_PASSWORD: "${{ secrets.CSONAR_HUB_PASS }}"
-      REPO_URL: "https://github.com/CodeSecure-SE/cFS"    # the github.repositoryUrl is not an http-link.
+      REPO_URL: "${{ vars.REPO_URL }}"
+      CSONAR_HUB_URL: "${{ vars.CSONAR_HUB_URL }}"
 
     steps:
       - name: Set parallelism
