@@ -22,6 +22,8 @@ jobs:
       PROJECT_NAME: "cFS"
       CSONAR_HUB_USER: "${{ secrets.CSONAR_HUB_USER }}"
       CSONAR_HUB_PASSWORD: "${{ secrets.CSONAR_HUB_PASS }}"
+      REPO_URL: ${{ env.REPO_URL}}
+      CSONAR_HUB_URL: ${{ env.CSONAR_HUB_URL}}
 
     steps:
       - name: Set parallelism
