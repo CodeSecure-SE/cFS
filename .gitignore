@@ -5,3 +5,5 @@ build
 cFS.prj_files/*
 cFS*.conf
 cFS.prj
+*.sarif
+apps/*
